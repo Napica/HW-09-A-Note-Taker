@@ -2,14 +2,14 @@
 var notesData = require("../data/notesData");
 const fs = require("fs");
 
-// // Routing
-// module.exports = function (app) {
-//   // GET
-//   app.get("/api/notes", function (req, res) {
-//     res.sendFile(path.json(__dirname, "./public/assets/notes.html"));
-//   });
+// Routing
+module.exports = function (app) {
+  // // GET
+  // app.get("/api/notes", function (req, res) {
+  //   res.sendFile(path.json(__dirname, "./public/assets/notes.html"));
+  // });
 
-  // POST
+  // // POST
   // app.post("/api/notes", (req, res) => {
   //   // console.log(notesData);
   //   var notes = req.body
@@ -23,5 +23,4 @@ const fs = require("fs");
   //   }) 
   //   res.json(notesData)
   // });
-
-// };
+};
