@@ -1,82 +1,123 @@
-# HW-09-A-Note-Taker
+# A Useful Note Taker
 
-# Unit 11 Express Homework: Note Taker
+  <hr>
 
-## Description
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
+  <br/>
+  
+  This project is designed to help a student, worker or anyone who just needs to take notes, be able to write, save, review and delete any information they would like to make.  
 
-* The application frontend has already been created, it's your job to build the backend and connect the two.
+  <br/>
 
-* The following HTML routes should be created:
+## Table of Contents
 
-  * GET `/notes` - Should return the `notes.html` file.
+~[Installation](#installation)
+~[Usage](#usage)
+~[Contributing](#contributing)
+~[Features](#features)
+~[Tests](#tests)
+~[License](#license)
+~[Questions](#questions)
 
-  * GET `*` - Should return the `index.html` file
+  <br/>
 
-* The application should have a `db.json` file on the backend that will be used to store and retrieve notes using the `fs` module.
+## Installation
 
-* The following API routes should be created:
+  <hr>
+  
+  **To edit/use the application, please follow the steps to pull the repository from GitHub through Git Bash and pull the script into VSCode, provided all three items are already installed on a local network.  It also requires Node.JS to be installed on the local network as well.**
 
-  * GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
+Instillation steps are as follows:
 
-  * POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
+1. Access the repository at [Git Hub] https://github.com/Napica/HW-09-A-Note-Taker.
+2. Click on the code section (in green) and clone the SSH key.
+3. Once the SSH key is cloned, open the terminal through Git Bash.
+4. Find or create the folder the user wants to work in and enter the following commands the the Git terminal:
+   1. git clone [copied link] (_this will allow access the repository to the local computer._)
+   2. git pull (_this will pull all the lines of script from the local repository._)
+   3. code . (*This will extract the code and link the paths to VSCode for review/editing/uploading*)
+5. In the the terminal, please run "npm install" (as the dependencie should be there) to download the modules necessary for this project to work.  
+6.  Once the modules are downloaded, please open up the terminal again and run "npm start".  This will initialize the project and send you on your way to generating the localhost. 
 
-  * DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
 
-## User Story
+Please click on the link below to see a live deployed version of the project:
 
-AS A user, I want to be able to write and save notes
+1. https://secure-savannah-70424.herokuapp.com/
 
-I WANT to be able to delete notes I've written before
+  <br/>
+   
+  
+  ## Usage 
+  
+  <hr>
+  
+  <br/>
+  
+ This project is used to create, review, delete notes.  
+     
+<br/>    
 
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
+  ## Contribution 
+  
+  <hr>
+  
+  #### Contributors 
+  
+ I would like to thank Jonathan Canales, Alex Flemming and Peter Colella for the advice and guidance in creating this project. 
+  
+  <br/>
+  
+  ## Features
+  <hr>
+  
+#### To get started writing notes:
+  
+<br/>
 
-## Business Context
+![itemLinks](./public/assets/images/readmeimage1.png)
 
-For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
+<br/>
 
-## Acceptance Criteria
+#### The user can add a title of the note and the body of the note in the browser.  
 
-Application should allow users to create and save notes.
+<br/>
 
-Application should allow users to view previously saved notes.
+![itemLinks](./public/assets/images/readmeimage2.png)
 
-Application should allow users to delete previously saved notes.
+<br/>
 
-## Deploying the App
+#### To create a new note, the user must click the pencil icon and to save a note, the user must click on the file icon. 
 
-You will not be able to deploy your server side code on GitHub pages. This app should be deployed on Heroku. Carefully follow the [Heroku Guide](../04-Important/HerokuGuide.md) for getting your app deployed on Heroku.
+![itemLinks](./public/assets/images/readmeimage3.png)
 
-- - -
+<br/>
 
-## Commit Early and Often
+#### The user can generate, save, and cylce between as many notes as they would like 
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+![itemLinks](./public/assets/images/readmeimage4.png)
 
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+<br/>
 
-* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+## Tests
 
-Follow these guidelines for committing:
+  <hr>
+  
+  
+  If you would like to go about testing this project, please install the project on a local server for testing.   
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+  <br/>
+  
+  ## License 
+  
+  <hr>
+  
+  This application is licensed under MIT
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+  <br/>
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+## Questions
 
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL of the deployed application. This should be the link to the url provided by Heroku. Be sure not to submit a link to the Heroku dashboard.
-
-* The URL of the GitHub repository
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+  <hr>
+  
+  #### If you would like to know more, please contact or see any other projects at [napica](https://github.com/napica)
