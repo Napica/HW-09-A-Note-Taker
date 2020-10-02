@@ -1,7 +1,7 @@
 // Load Data
 const fs = require("fs");
 const path = require("path");
-const uuid = require("uuid")
+const { v4: uuidv4 } = require('uuid');
 const { log } = require("console");
 const { response } = require("express");
 
@@ -24,9 +24,8 @@ module.exports = function (app) {
         });
       }
       const updatedData = JSON.parse(data);
-      req.body.id = updatedData.length;
-      updatedData.push(req.body);
-      console.log(updatedData);
+      req.body.id = uuidv4();
+      updatedData.push(req.body);              
       fs.writeFile("./db/db.json", JSON.stringify(updatedData), (err) => {
         if (err) {
           console.log(err);
